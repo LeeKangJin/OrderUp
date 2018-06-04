@@ -43,7 +43,8 @@ public class AdapterCustomerAppetizer extends ArrayAdapter<Foods> {
         textName.setText( foodItem.name);
         textDescription.setText( foodItem.description);
         textPrice.setText( foodItem.price);
-        imagePhoto.setImageResource( foodItem.photo);
+        if(foodItem.photo!=Foods.NoPhoto)
+            imagePhoto.setImageResource( foodItem.photo);
 
         return customView;
     }

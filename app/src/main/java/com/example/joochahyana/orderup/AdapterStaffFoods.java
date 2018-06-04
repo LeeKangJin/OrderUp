@@ -45,7 +45,8 @@ public class AdapterStaffFoods extends ArrayAdapter<Foods> {
         textName.setText(foods.name);
         textDescription.setText(foods.description);
         textPrice.setText(foods.price);
-        imagePhoto.setImageResource(foods.photo);
+        if (foods.photo!=Foods.NoPhoto)
+            imagePhoto.setImageResource(foods.photo);
 
         return staffView;
     }

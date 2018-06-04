@@ -36,7 +36,7 @@ public class FragmentCustomerAppetizer extends Fragment{
         adapter.add(food3);
         Foods food4 = new Foods("Food Name 4", "Description of food 4", "$40.00", R.drawable.pic04,Foods.Appetizer);
         adapter.add(food4);
-        Foods food5 = new Foods("Food Name 5", "Description of food 5", "$50.00", -1,Foods.Appetizer);
+        Foods food5 = new Foods("Food Name 5", "Description of food 5", "$50.00", Foods.NoPhoto,Foods.Appetizer);
         adapter.add(food5);
 
     }

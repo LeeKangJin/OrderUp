@@ -3,7 +3,7 @@ package com.example.joochahyana.orderup;
 
 
 public class Foods {
-
+    public static final int NoPhoto = -1;
     public static final int Appetizer = 0;
     public static final int Beverage = 1;
     public static final int Dessert = 2;
@@ -12,7 +12,7 @@ public class Foods {
     public String name;
     public String description;
     public String price;
-    public Integer photo;
+    public Integer photo;// -1 : noPhoto
     public Integer type;
     // 0 : Appetizer, 1 : Beverage, 2 : Dessert, 3 : Dish
 
